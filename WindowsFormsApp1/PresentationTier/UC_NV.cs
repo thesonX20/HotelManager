@@ -76,7 +76,6 @@ namespace WindowsFormsApp1.PresentationTier
                 MessageBox.Show("Mã sinh viên không được trùng!", "Thông Báo", MessageBoxButtons.OK);
             }
         }
-
         private void btnSuaNV_Click(object sender, EventArgs e)
         {
             int selectedRow = GetSelectedRow(txtMaNV.Text);
