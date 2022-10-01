@@ -1,1 +1,2 @@
 # HotelManager
+server Sơn: DESKTOP-EH4VAV8\SQLEXPRESS01
