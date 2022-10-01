@@ -10,7 +10,7 @@ namespace WindowsFormsApp1
 {
     class Connection
     {
-        private static string stringConnection = @"Data Source=DESKTOP-EH4VAV8\SQLEXPRESS01;Initial Catalog=QUANLYKHACHSAN;Integrated Security=True";
+        private static string stringConnection = @"Data Source=DESKTOP-6VS9H80\SQLEXPRESS;Initial Catalog=QUANLYKHACHSAN;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using WindowsFormsApp1.PresentationTier;
 using WindowsFormsApp1.DataTier.Models;
+using System.Data.SqlClient;
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
@@ -50,13 +51,15 @@ namespace WindowsFormsApp1
 
         private void KhoiTaoSoPhong(int dong, int cot)
         {
-            DBQLKS context = new DBQLKS();
+            DataTier.Models.DBQLKS context = new DataTier.Models.DBQLKS();
+           // DBQLKS context = new DBQLKS();
 
             int x, y = 26, count = 1;
 
-            List<PHONG> listPhong = context.PHONGs.ToList();
+            List<DataTier.Models.PHONG> listPhong = context.PHONGs.ToList();
+            // List<PHONG> listPhong = context.PHONGs.ToList();
 
-            for(int i = 0; i < dong; i++)
+            for (int i = 0; i < dong; i++)
             {
                 x = 200;
                 for(int j = 0; j < cot; j++)
