@@ -67,7 +67,7 @@
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(10, 10, 20, 20);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1291, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1291, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,7 +78,7 @@
             this.thoátToolStripMenuItem});
             this.hệThốngToolStripMenuItem.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(99, 27);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(99, 28);
             this.hệThốngToolStripMenuItem.Text = "Hệ Thống";
             // 
             // đăngXuấtToolStripMenuItem
@@ -98,25 +98,25 @@
             // quảnLýToolStripMenuItem
             // 
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(86, 28);
             this.quảnLýToolStripMenuItem.Text = "Quản Lý";
             // 
             // danhMụcToolStripMenuItem
             // 
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(103, 27);
+            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(103, 28);
             this.danhMụcToolStripMenuItem.Text = "Danh Mục";
             // 
             // thốngKêToolStripMenuItem
             // 
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(97, 27);
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(97, 28);
             this.thốngKêToolStripMenuItem.Text = "Thống Kê";
             // 
             // trợGiúpToolStripMenuItem
             // 
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(89, 28);
             this.trợGiúpToolStripMenuItem.Text = "Trợ Giúp";
             // 
             // panel1
@@ -124,7 +124,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 29);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1291, 94);
             this.panel1.TabIndex = 1;
@@ -252,9 +252,9 @@
             // 
             this.pnlBan.BackColor = System.Drawing.Color.LightCyan;
             this.pnlBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBan.Location = new System.Drawing.Point(0, 123);
+            this.pnlBan.Location = new System.Drawing.Point(0, 124);
             this.pnlBan.Name = "pnlBan";
-            this.pnlBan.Size = new System.Drawing.Size(1291, 932);
+            this.pnlBan.Size = new System.Drawing.Size(1291, 931);
             this.pnlBan.TabIndex = 2;
             this.pnlBan.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBan_Load);
             // 
