@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2AADEAD-AB18-42D5-939C-0F910428D31C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Repository, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Entity.Repository.2.0.0.1\lib\net45\System.Data.Entity.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DataTier\Models\BANGLUONG.cs" />
+    <Compile Include="DataTier\Models\DBQLKS.cs" />
+    <Compile Include="DataTier\Models\DICHVU.cs" />
+    <Compile Include="DataTier\Models\HOADON.cs" />
+    <Compile Include="DataTier\Models\KHACHHANG.cs" />
+    <Compile Include="DataTier\Models\LOAIPHONG.cs" />
+    <Compile Include="DataTier\Models\NHANVIEN.cs" />
+    <Compile Include="DataTier\Models\PHIEUDATPHONG.cs" />
+    <Compile Include="DataTier\Models\PHIEUDENBU.cs" />
+    <Compile Include="DataTier\Models\PHONG.cs" />
+    <Compile Include="DataTier\Models\sysdiagram.cs" />
+    <Compile Include="DataTier\Models\TIENNGHI.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khachhang.Designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.cs" />
+    <Compile Include="PresentationTier\Dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\Dangky.Designer.cs">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\frmDangNhap1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmDangNhap.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\QuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\QuenMK.Designer.cs">
+      <DependentUpon>QuenMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\UC_DV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\UC_DV.Designer.cs">
+      <DependentUpon>UC_DV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\UC_PHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\UC_PHONG.Designer.cs">
+      <DependentUpon>UC_PHONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taikhoan.cs" />
+    <Compile Include="PresentationTier\UC_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\UC_KH.Designer.cs">
+      <DependentUpon>UC_KH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\Dangky.resx">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmDangNhap1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\QuenMK.resx">
+      <DependentUpon>QuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\UC_DV.resx">
+      <DependentUpon>UC_DV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\UC_PHONG.resx">
+      <DependentUpon>UC_PHONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PresentationTier\UC_KH.resx">
+      <DependentUpon>UC_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1pngtree-vector-graph-user-icon-png-image_3989972.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1pngtree-vector-graph-user-icon-png-image_39899721.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-khach-hang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_user-97890_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_interior_room_furniture_home_design_living_house_sofa_lamp-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_user-97890_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_interior_room_furniture_home_design_living_house_sofa_lamp-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1dang-ki-tai-khoan-ecopoint-1-1024x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_bank-vector-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1bank-vector-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Picture\pic1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\search %281%29.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\add %281%29.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\taxes.png" />
+    <None Include="Resources\smartphone.png" />
+    <None Include="Resources\check-out1.png" />
+    <None Include="Resources\check-out.png" />
+    <None Include="Resources\check-in %281%29.png" />
+    <None Include="Resources\living-room.png" />
+    <None Include="Resources\bed.png" />
+    <None Include="Resources\hotel-bell %281%29.png" />
+    <None Include="Resources\call.png" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\anh-gif1.gif" />
+    <None Include="Resources\5-stars1.png" />
+    <None Include="Resources\login %281%29.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\anh-gif.gif" />
+    <None Include="Resources\hinh-anh-kinh-doanh-khach-san-21.jpg" />
+    <None Include="Resources\Hinh-anh-gif-thanh-pho-la-roi-11.gif" />
+    <None Include="Resources\lam-anh-gif11.gif" />
+    <None Include="Resources\4ce633d76c898adf6a1c372806fc9bda.gif" />
+    <None Include="Resources\pewpew.gif" />
+    <None Include="Resources\Hinh-anh-gif-thanh-pho-la-roi-1.gif" />
+    <None Include="Resources\lam-anh-gif1.gif" />
+    <None Include="Resources\hinh-anh-kinh-doanh-khach-san-2.jpg" />
+    <None Include="Resources\5-stars.png" />
+    <None Include="Resources\kiem88888.png" />
+    <None Include="Resources\kiem88.PNG" />
+    <None Include="Resources\kiem99.PNG" />
+    <None Include="Resources\kiem1233.png" />
+    <None Include="Resources\timkiem.PNG" />
+    <None Include="Resources\in111.png" />
+    <None Include="Resources\xoa9999.png" />
+    <None Include="Resources\xoa55.PNG" />
+    <None Include="Resources\xoa123.png" />
+    <None Include="Resources\xoaaa.PNG" />
+    <None Include="Resources\123456.png" />
+    <None Include="Resources\themee1111.png" />
+    <None Include="Resources\themee.PNG" />
+    <None Include="Resources\themm123.png" />
+    <None Include="Resources\luuu234.png" />
+    <None Include="Resources\luuu.PNG" />
+    <None Include="Resources\luu.PNG" />
+    <None Include="Resources\them.png" />
+    <None Include="Resources\trap1111.png" />
+    <None Include="Resources\kh.PNG" />
+    <None Include="Resources\trap.PNG" />
+    <None Include="Resources\nhanp.PNG" />
+    <None Include="Resources\dki.PNG" />
+    <None Include="Resources\dv.PNG" />
+    <None Include="Resources\phong.PNG" />
+    <None Include="Resources\kkkkk.PNG" />
+    <None Include="Resources\jjjjj.PNG" />
+    <None Include="Resources\sgsgsdgsdg.png" />
+    <None Include="Resources\11111.jpg" />
+    <None Include="Resources\ks1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
