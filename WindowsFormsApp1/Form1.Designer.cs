@@ -42,10 +42,10 @@
             this.btnDangKy = new System.Windows.Forms.Button();
             this.btnTraPhong = new System.Windows.Forms.Button();
             this.btnNhanPhong = new System.Windows.Forms.Button();
+            this.btnPhong = new System.Windows.Forms.Button();
             this.btnDichvu = new System.Windows.Forms.Button();
             this.btnKH = new System.Windows.Forms.Button();
             this.pnlBan = new System.Windows.Forms.Panel();
-            this.btnPhong = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -150,9 +150,9 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::WindowsFormsApp1.Properties.Resources.taxes;
-            this.button1.Location = new System.Drawing.Point(576, -1);
+            this.button1.Location = new System.Drawing.Point(577, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 95);
+            this.button1.Size = new System.Drawing.Size(89, 94);
             this.button1.TabIndex = 6;
             this.button1.Text = "Hóa Đơn";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -203,6 +203,21 @@
             this.btnNhanPhong.UseVisualStyleBackColor = false;
             this.btnNhanPhong.Click += new System.EventHandler(this.btnNhanPhong_Click);
             // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.White;
+            this.btnPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhong.Image = global::WindowsFormsApp1.Properties.Resources.living_room;
+            this.btnPhong.Location = new System.Drawing.Point(192, 1);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Size = new System.Drawing.Size(100, 95);
+            this.btnPhong.TabIndex = 2;
+            this.btnPhong.Text = "Phòng";
+            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPhong.UseVisualStyleBackColor = false;
+            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
+            // 
             // btnDichvu
             // 
             this.btnDichvu.BackColor = System.Drawing.Color.White;
@@ -242,21 +257,6 @@
             this.pnlBan.Size = new System.Drawing.Size(1291, 932);
             this.pnlBan.TabIndex = 2;
             this.pnlBan.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBan_Load);
-            // 
-            // btnPhong
-            // 
-            this.btnPhong.BackColor = System.Drawing.Color.White;
-            this.btnPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhong.Image = global::WindowsFormsApp1.Properties.Resources.living_room;
-            this.btnPhong.Location = new System.Drawing.Point(192, 1);
-            this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(100, 95);
-            this.btnPhong.TabIndex = 2;
-            this.btnPhong.Text = "Phòng";
-            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnPhong.UseVisualStyleBackColor = false;
-            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
             // Form1
             // 

@@ -138,6 +138,18 @@
     <Compile Include="PresentationTier\UC_DV.Designer.cs">
       <DependentUpon>UC_DV.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationTier\UC_HD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\UC_HD.Designer.cs">
+      <DependentUpon>UC_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationTier\UC_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationTier\UC_NV.Designer.cs">
+      <DependentUpon>UC_NV.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationTier\UC_PHONG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationTier\UC_DV.resx">
       <DependentUpon>UC_DV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\UC_HD.resx">
+      <DependentUpon>UC_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationTier\UC_NV.resx">
+      <DependentUpon>UC_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationTier\UC_PHONG.resx">
       <DependentUpon>UC_PHONG.cs</DependentUpon>
